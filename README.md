@@ -2,6 +2,7 @@
 
 # tangra.rs
 
+[![Discord Server Badge](https://img.shields.io/discord/1358456011316396295?logo=discord)](https://discord.gg/xj6y5ZaTMr)
 [![Crates.io Badge](https://img.shields.io/crates/v/tangra.svg)](https://crates.io/crates/tangra)
 [![CI Badge](https://github.com/kkrypt0nn/tangra.rs/actions/workflows/ci.yml/badge.svg)](https://github.com/kkrypt0nn/tangra.rs/actions)
 [![Dependency Status Badge](https://deps.rs/repo/github/kkrypt0nn/tangra.rs/status.svg)](https://deps.rs/repo/github/kkrypt0nn/tangra.rs)
