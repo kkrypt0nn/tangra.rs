@@ -1,4 +1,4 @@
-extern crate tangra;
+use tangra;
 
 fn main() {
     let mut logger = tangra::Logger::new();

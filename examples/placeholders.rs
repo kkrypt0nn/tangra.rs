@@ -1,4 +1,4 @@
-extern crate tangra;
+use tangra;
 
 use tangra::levels::Level;
 
