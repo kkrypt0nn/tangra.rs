@@ -7,7 +7,6 @@ use std::io::Write;
 use std::panic::Location;
 
 use chrono::Local;
-use whoami::fallible;
 
 use crate::levels::Level;
 
@@ -95,14 +94,14 @@ impl Logger {
                 Local::now().format(&self.time_format).to_string(),
             ),
             // System
-            ("$[sys:architecture]", whoami::arch().to_string()),
+            ("$[sys:architecture]", whoami::cpu_arch().to_string()),
+            ("$[sys:hostname]", whoami::hostname().unwrap_or_default()),
             (
-                "$[sys:hostname]",
-                fallible::hostname().unwrap_or_default().to_string(),
+                "$[sys:operating_system]",
+                whoami::devicename().unwrap_or_default(),
             ),
-            ("$[sys:operating_system]", whoami::devicename().to_string()),
-            ("$[sys:username]", whoami::username().to_string()),
-            ("$[sys:username]", whoami::username().to_string()),
+            ("$[sys:username]", whoami::username().unwrap_or_default()),
+            ("$[sys:username]", whoami::username().unwrap_or_default()),
         ])
     }
 
